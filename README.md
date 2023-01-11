@@ -36,3 +36,18 @@ People have hard times  identifying and save colors that they find in real life
 # Tools
 
 [![SwiftUI][SwiftUI-img]][SwiftUI-url]   [![Sketch][Sketch-img]][Sketch-url]  
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[SwiftUI-img]: https://img.shields.io/badge/-SwiftUI-blue
+
+[SwiftUI-url]: https://developer.apple.com/xcode/swiftui/
+
+[Sketch-img]: https://img.shields.io/badge/-Sketch-yellow
+
+[Sketch-url]: https://www.sketch.com
+
