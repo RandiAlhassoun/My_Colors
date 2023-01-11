@@ -9,6 +9,8 @@
  </div>   
 
 # Big Idea
+Inclusion
+
 # Challenge Statement
 # Solution Concept
 # Technologies & Tools
