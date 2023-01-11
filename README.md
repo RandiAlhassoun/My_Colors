@@ -1,4 +1,3 @@
-# My_Colors
 <!-- PROJECT LOGO -->
 
 <div>
