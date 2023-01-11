@@ -1,0 +1,22 @@
+
+"color" = "color";
+"My Colors" = "My Colors";
+"Delete" = "Delete";
+"Save" = "Save";
+"Add Label" = "Add Label";
+"Cancel" = "Cancel";
+"labelDesc" = "Add a label for the selected color to save it";
+"Label" = "Label";
+"onBoardingWelcome"="Welcome to My Colors";
+"myColorDesc"="View Your Saved colors and copy their hex value to use them in you art, design, etc. ";
+"Color picker"= "Color picker";
+"CPDesc" = "Pick any color you like from Your camera or photo library.";
+"Vision"="Vision";
+"visionDesc" = "See How the colors appears to people with color blindness.";
+"Get started" ="Get started";
+"Camera" = "Camera";
+"Photo library" = "Photo library";
+"continueDesc" = "Would you to continue picking color?";
+"savedColor" = "Color has been saved!";
+"Continue" = "Continue";
+"Exit" = "Exit";
