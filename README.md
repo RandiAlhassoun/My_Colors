@@ -39,7 +39,7 @@ People have hard times  identifying and save colors that they find in real life
 
 # Team
 
-<a>Roba Alghanmi </a> - 
+<a href="https://www.linkedin.com/in/roba-alghanmi-181224205/">Roba Alghanmi </a> - 
 <a href="https://www.linkedin.com/in/rand-alhassoun-b067b91a3/">Rand Alhassoun </a>
 
 <!-- MARKDOWN LINKS & IMAGES -->
