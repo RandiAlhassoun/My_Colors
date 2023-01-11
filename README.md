@@ -37,7 +37,12 @@ People have hard times  identifying and save colors that they find in real life
 
 [![SwiftUI][SwiftUI-img]][SwiftUI-url]   [![Sketch][Sketch-img]][Sketch-url]  
 
-
+# Team
+29
+#### PlanB
+30
+<a>Roba Alghanmi </a>
+<a href="https://www.linkedin.com/in/rand-alhassoun-b067b91a3/">Rand Alhassoun </a>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
