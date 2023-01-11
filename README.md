@@ -8,14 +8,14 @@
 
  </div>   
 
-# Big Idea
+### Big Idea
 Inclusion
 
-# Challenge Statement
-# Solution Concept
-# Technologies & Tools
-# Demo
-# Challenge Summary
+## Challenge Statement
+## Solution Concept
+## Technologies & Tools
+## Demo
+## Challenge Summary
 
 # Overveiw
 
