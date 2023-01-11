@@ -8,6 +8,12 @@
 
  </div>   
 
+# Big Idea
+# Challenge Statement
+# Solution Concept
+# Technologies & Tools
+# Demo
+# Challenge Summary
 
 # Overveiw
 
