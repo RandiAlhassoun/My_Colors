@@ -20,3 +20,19 @@ A tool for people who have hard time identifying colors and wishes there was a w
 ### Problem Statment
 
 People have hard times  identifying and save colors that they find in real life.
+
+
+# User stories
+- The user wants a way that can help easily identifying colors of nature
+- The user wants to label frequently used colors
+- The user wants to create Color palettes
+
+# Success Criteria
+
+- Project is completed on time
+- Project meet the functionals requirements
+- Project team satisfaction target is achieved
+
+# Tools
+
+[![SwiftUI][SwiftUI-img]][SwiftUI-url]   [![Sketch][Sketch-img]][Sketch-url]  
