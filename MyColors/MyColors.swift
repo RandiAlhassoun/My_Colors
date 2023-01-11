@@ -12,7 +12,7 @@ struct MyColors: View {
     @EnvironmentObject var manager: dataManager
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(sortDescriptors: []) private var savedColors: FetchedResults<SavedColors>
-    
+    @FetchRequest(sortDescriptors: []) private var filteredsavedColors: FetchedResults<SavedColors>
     
     //color picker values
     @State var showPicker: Bool = false
@@ -30,11 +30,11 @@ struct MyColors: View {
     @State private var isImagePickerDisplay = false
     @State private var showCamera = false
     
-    @State private var SearchText = ""
+    @State private var searchText = ""
     //==================================================================
 
   //  @State private var cancelPic = false
-        @State var showOnboarding: Bool = true
+        @AppStorage("showOnboarding") var showOnboarding: Bool = true
     //show page with grayscale
     @State private var showGrayScale = false
     
@@ -113,8 +113,6 @@ struct MyColors: View {
                                         .bold()
                                         .accessibilityLabel("Camera")
 
-                                    //                        Text("add from cam")
-                                    //                            .font(.caption)
                                 }//v
                             }//h
                         }
@@ -140,24 +138,7 @@ struct MyColors: View {
                         
                      
                     }//hh
-                    
-                    //show the selected color
-                    //            Circle()
-                    //                .fill(selectedColor)
-                    //                .frame(width:100,height:50)
-    //
-    //                Button{
-    //                    showMyColors.toggle()
-    //                } label: {
-    //                    VStack{
-    //                        Text("My colors")
-    //                        Image(systemName: "chevron.down")
-    //                    }
-    //                }
-    //                .sheet(isPresented: $showMyColors){}
-    //            content: { MyColors()}
-    //
-                    //
+
                 }.padding()
                 
             
@@ -183,44 +164,12 @@ struct MyColors: View {
                 List {
 //                    Section (header: Text ("Saved colors")) {
                         
-                        ForEach(savedColors) { item in
-                            HStack{
-                                //show the selected color
-                                
-                                Circle()
-                                    .fill(Color(hex: item.hexValue ?? "no color") ?? .white)
-                                    .frame(width:73,height:73)
-                                VStack(alignment: .leading){
-                                    
-                                    Text(item.colorName ?? "No Name" )
-                                    
-                                    //  .frame(maxWidth: .infinity, alignment: .leading).contentShape(Rectangle())
-                                    Text(item.hexValue ?? "no value")
-                                }
-                                //.accessibilityLabel("saved color")
-                                
-                                Spacer()
-                                // copy button
-                                Button(action: {
-                                    UIPasteboard.general.string = item.hexValue
-                                }) {
-                                    Image(systemName: "doc.on.doc")
-                                        .foregroundColor(Color("appColor"))
-                                }                                    .accessibilityLabel("Copy Hex value")
-                                
-                                
-                                
-                                    .frame(width:36,height:36)
-                            }
-                            //                        .accessibilityHint(Text("saved color"))
-                            //                        .accessibilityLabel("saved color")
+                        ForEach(filteredsavedColors) { item in
+                            colorRow(item: item)
                             
                         } .onDelete(perform: deleteColor)
-                        //.accessibilityLabel("saved color")
                         
     
-
-
                 }
                 .accessibilityHint(Text("saved color"))
 
@@ -229,25 +178,28 @@ struct MyColors: View {
 
             
                 .navigationTitle("My Colors")
-                
+                .onChange(of: searchText){ item in
+                filteredsavedColors.nsPredicate = searchPredicate(query: item)
+                }
+
             }
         }//v
             .saturation(showGrayScale ? 0 : 1)
         }.sheet(isPresented: $showOnboarding){} content: {onBoardingView(showOnboarding: $showOnboarding)}
-            .searchable(text: $SearchText, prompt: "Search color" )
+            .searchable(text: $searchText, prompt: "Search color" )
         
 
        
     }
     
-//
-//    var searchResults: [savedColors]{
-//        if SearchText.isEmpty {
-//            return savedColors
-//        } else {
-//            return savedColors.filter($0.name.contains(SearchText))
-//        }
-//    }
+    private func searchPredicate(query: String) -> NSPredicate? {
+    if searchText.isEmpty { return nil }
+    else {
+    return NSPredicate(format: "%K BEGINSWITH[cd] %@",
+    #keyPath(SavedColors.colorName), searchText)
+    }
+
+      }
     
     //delete the color from coreData
     func deleteColor(at offsets: IndexSet) {
@@ -265,6 +217,33 @@ struct MyColors: View {
     
 }
 
+//
+struct colorRow: View {
+var item : SavedColors
+var body: some View{
+HStack{
+//show the selected color
+Circle()
+.fill(Color(hex: item.hexValue ?? "no color") ?? .white)
+.frame(width:73,height:73)
+VStack(alignment: .leading){
+Text(item.colorName ?? "No Name" )
+// .frame(maxWidth: .infinity, alignment: .leading).contentShape(Rectangle())
+Text(item.hexValue ?? "no value")
+}
+Spacer()
+// copy button
+Button(action: {
+UIPasteboard.general.string = item.hexValue
+}) {
+Image(systemName: "doc.on.doc")
+.foregroundColor(Color("appColor"))
+}
+
+        .frame(width:36,height:36)
+    }
+}
+}
 
 //on boarding
 struct onBoardingView: View {
