@@ -178,10 +178,10 @@ struct MyColors: View {
             
             //the list for saved colors
             else {
-//                Text("").accessibilityHint("saved colors")
+                Text("").accessibilityHint("saved colors")
 //                    .accessibilityLabel("saved colors")
                 List {
-                    Section (header: Text ("Saved colors")){
+//                    Section (header: Text ("Saved colors")) {
                         
                         ForEach(savedColors) { item in
                             HStack{
@@ -218,7 +218,7 @@ struct MyColors: View {
                         } .onDelete(perform: deleteColor)
                         //.accessibilityLabel("saved color")
                         
-                    }
+    
 
 
                 }
