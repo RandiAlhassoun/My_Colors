@@ -115,7 +115,7 @@ struct Helper: View{
                                 .alert("Add Label", isPresented: $presentAlert, actions: {
                                     TextField("Label", text: $colorName)
                                     //save the selected color
-                                    Button("Save", action: {setTheValues(); continueColor.toggle() })
+                                    Button("Save", action: {setTheValues(); continueColor.toggle() ; colorName = ""})
                                     Button("Cancel", role: .cancel, action: {})
                                 }, message: {
                                     Text("labelDesc")

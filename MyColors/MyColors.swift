@@ -186,7 +186,7 @@ struct MyColors: View {
         }//v
             .saturation(showGrayScale ? 0 : 1)
         }.sheet(isPresented: $showOnboarding){} content: {onBoardingView(showOnboarding: $showOnboarding)}
-            .searchable(text: $searchText, prompt: "Search color" )
+            .searchable(text: $searchText, prompt: "Search a color" )
         
 
        

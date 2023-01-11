@@ -15,8 +15,12 @@
 "visionDesc" = "See How the colors appears to people with color blindness.";
 "Get started" ="Get started";
 "Camera" = "Camera";
-"Photo library" = "Photo library";
+"Photos" = "Photo";
 "continueDesc" = "Would you to continue picking color?";
 "savedColor" = "Color has been saved!";
 "Continue" = "Continue";
-"Exit" = "Exit";
+"Exit" = "Go to colors";
+"Show gray scale" = "Show gray scale";
+"No saved colors" = "No saved colors";
+"Add your colors from Camera or Photo library." = "Add your colors from Camera or Photo library.";
+"Search a color" = "Search a color";
