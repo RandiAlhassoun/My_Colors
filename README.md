@@ -9,17 +9,23 @@
  </div>   
 
 ## Big Idea
-Inclusion
+Make an inclusive solution that helps people identifying colors
 
 ## Challenge Statement
 helping people who are struggling with finding and identifying colors
 
 ## Solution Concept
-A tool for people who have hard time identifying colors and wishes there was a way to specify and save colors from real life so that they have reference palette
+An app for people who have hard time identifying colors and wishes there was a way to specify and save colors from real life so that they have reference palette
 
-## Technologies & Tools
+## Used Technologies 
+- CoreData
+- Image picker
+- Color picker
+- Accessibility (Voice over)
+- UIKit
+
+## Tools
 [![SwiftUI][SwiftUI-img]][SwiftUI-url]   [![Sketch][Sketch-img]][Sketch-url]  
-
 ## Demo
 
 ## Challenge Summary
