@@ -8,44 +8,24 @@
 
  </div>   
 
-### Big Idea
+## Big Idea
 Inclusion
 
 ## Challenge Statement
+helping people who are struggling with finding and identifying colors
+
 ## Solution Concept
+A tool for people who have hard time identifying colors and wishes there was a way to specify and save colors from real life so that they have reference palette
+
 ## Technologies & Tools
-## Demo
-## Challenge Summary
-
-# Overveiw
-
-A Graphics & Design platform that helps people whom are struggling with finding and identifying colors.
-
-### Proposed Solution
-
-A tool for people who have hard time identifying colors and wishes there was a way to specify and save colors from real life so that they have reference palette.
-
-### Problem Statment
-
-People have hard times  identifying and save colors that they find in real life.
-
-
-# User stories
-- The user wants a way that can help easily identifying colors of nature
-- The user wants to label frequently used colors
-- The user wants to create Color palettes
-
-# Success Criteria
-
-- Project is completed on time
-- Project meet the functionals requirements
-- Project team satisfaction target is achieved
-
-# Tools
-
 [![SwiftUI][SwiftUI-img]][SwiftUI-url]   [![Sketch][Sketch-img]][Sketch-url]  
 
-# Team
+## Demo
+
+## Challenge Summary
+
+
+## Team
 
 <a href="https://www.linkedin.com/in/roba-alghanmi-181224205/">Roba Alghanmi </a> - 
 <a href="https://www.linkedin.com/in/rand-alhassoun-b067b91a3/">Rand Alhassoun </a>
