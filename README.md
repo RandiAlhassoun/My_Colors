@@ -31,7 +31,8 @@ An app for people who have hard time identifying colors and wishes there was a w
 
 ## Challenge Summary
 
-<h3><img align="left" width="1000" height="600" src="App_Icon.jpeg"> <br/> My Colors <br/>
+<h3><img align="left" width="1000" height="600" src="Challenge Summary.png"> <br/> <br/>
+
 
 
 ## Team
