@@ -70,6 +70,7 @@ struct MyColors: View {
                                         .font(.title3)
                                         .bold()
                                         .accessibilityHint("Photos button to select a photo from the phone photos")
+                                    //
                                 }//v
                             }//h
                             
