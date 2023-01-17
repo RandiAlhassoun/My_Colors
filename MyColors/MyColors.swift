@@ -48,6 +48,7 @@ struct MyColors: View {
                 Toggle("Show gray scale", isOn: $showGrayScale)
                                .toggleStyle(SwitchToggleStyle(tint: Color("appColor")))
                                .padding(.horizontal)
+                               .accessibilityHint("activate gray scale")
 
                 
             //the buttons
@@ -68,7 +69,7 @@ struct MyColors: View {
                                     Text("Photos")
                                         .font(.title3)
                                         .bold()
-                                        .accessibilityLabel("Photos")
+                                        .accessibilityHint("Photos button to select a photo from the phone photos")
                                 }//v
                             }//h
                             
@@ -106,12 +107,11 @@ struct MyColors: View {
                                 Image(systemName: "camera")
                                     .font(.title3)
                                     .bold()
-
                                 VStack{
                                     Text("Camera")
                                         .font(.title3)
                                         .bold()
-                                        .accessibilityLabel("Camera")
+                                        .accessibilityHint("button to take a photo on a camera")
 
                                 }//v
                             }//h
@@ -187,6 +187,7 @@ struct MyColors: View {
             .saturation(showGrayScale ? 0 : 1)
         }.sheet(isPresented: $showOnboarding){} content: {onBoardingView(showOnboarding: $showOnboarding)}
             .searchable(text: $searchText, prompt: "Search a color" )
+            .accessibilityLabel("Search bar to Search a saved color")
         
 
        
